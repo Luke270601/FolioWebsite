@@ -1,0 +1,45 @@
+.contact-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    transform: translateY(50px);
+    animation: fadeUpBounce 1s ease-in-out forwards;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+.contact-list li strong {
+    font-weight: bold;
+}
+
+.contact-list li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Animations
+ */
+@keyframes fadeUpBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+    80% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
